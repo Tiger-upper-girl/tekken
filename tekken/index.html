@@ -1,0 +1,210 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <ol>
+    <li>Tekken7 3 ON 3 Battle!</li>
+  </ol>
+
+
+  <button type="button" id = "game_start1" name ="1" value="1" onClick="button1" class="ms-3 btn btn-primary">Player1</button>
+<div class="col">
+  <div id="js-question"class="ms-3 mt-3 alert alert-primary" role="alert">
+    Player1
+  </div>
+
+  <button type="button" id = "game_start2" name ="2" value="2" onClick="button2" class="ms-3 btn btn-warning">Player2</button>
+
+
+
+  <div class="col">
+<div id="js-question2" class="ms-3 mt-3 alert alert-warning" role="alert">
+  Player2
+</div>
+
+
+  <div class="container">    
+
+      <div class="d-flex justify-content-center">
+      <button type="button" class="btn btn-primary" id="startB">Game start!</button>
+      <!-- <button type="button" class="ms-1 btn btn-primary">Primary</button> -->
+      <!-- <button type="button" class="ms-1 btn btn-primary">Primary</button>
+      <button type="button" class="ms-1 btn btn-primary">Primary</button> -->
+    </div>
+    <br>
+    <br>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col order-first">
+          <form action="#" name="form1">
+          <strong><div id="p1name">Player1</div></strong>
+
+              <div>  <p>先鋒</p>
+                  <select name="tkchara" id="tkchara"></select>
+                  </select><select name="goods1" onChange="keisan()">
+                    <option value="0">勝利数を選択して下さい</option>
+                    <option value="1">1勝</option>
+                    <option value="2">2勝</option>
+                    <option value="3">3勝</option>
+                    </select></div>
+                  <br>
+
+              <div> <p>次鋒</p>
+                  <select name="tkchara" id="tkchara2">
+                  </select><select name="goods2" onChange="keisan()">
+                    <option value="0">勝利数を選択して下さい</option>
+                    <option value="1">1勝</option>
+                    <option value="2">2勝</option>
+                    <option value="3">3勝</option>
+                    </select></div>
+                <br>                    
+
+              <div> <p>大将</p>
+                  <select name="tkchara" id="tkchara3">
+                  </select><select name="goods3" onChange="keisan()">
+                    <option value="0">勝利数を選択して下さい</option>
+                    <option value="1">1勝</option>
+                    <option value="2">2勝</option>
+                    <option value="3">3勝</option>
+                  </select></div>
+                  <br>
+                  <align="right"><strong><div id="p1mei">Player1</div></strong>
+                  <input type="text" name="field_total" size="8" value="0"> Win!
+                  </form>
+                      </div>
+                      <div class="col">
+                        <div class="text-center"></div><br><br><br>
+                        <div class="text-center">VS</div>
+                        <div class="text-center"></div><br><br><br><br>
+                        <div class="text-center">VS</div>
+                        <div class="text-center"></div><br><br><br><br>
+                        <div class="text-center">VS</div>
+                      </div>
+                      <div class="col order-last">
+              
+          <strong><div id="p2name">Player2</div></strong>
+          <form action="#" name="form2">
+              <div>  <p>先鋒</p>
+                <select name="tkchara" id="tkchara4">
+                </select><select name="goods4" onChange="keisan2()">
+                  <option value="0">勝利数を選択して下さい</option>
+                  <option value="1">1勝</option>
+                  <option value="2">2勝</option>
+                  <option value="3">3勝</option>
+                </select></div>
+                <br>
+
+
+              <div>  <p>次鋒</p>
+                <select name="tkchara" id="tkchara5">
+                </select><select name="goods5" onChange="keisan2()">
+                  <option value="0">勝利数を選択して下さい</option>
+                  <option value="1">1勝</option>
+                  <option value="2">2勝</option>
+                  <option value="3">3勝</option>
+                </select></div>
+                <br>
+
+
+              <div>  <p>大将</p>
+                <select name="tkchara" id="tkchara6">
+                </select><select name="goods6" onChange="keisan2()">
+                  <option value="0">勝利数を選択して下さい</option>
+                  <option value="1">1勝</option>
+                  <option value="2">2勝</option>
+                  <option value="3">3勝</option>
+                </select></div>
+                <br>
+                <align="right"><strong><div id="p2mei">Player2</div></strong>
+                <input type="text" name="field_total2" size="8" value="0"> Win!
+              </form>
+                <br>
+        </div>
+      </div>
+
+
+    </div>
+</div>
+
+<br>
+
+
+
+
+
+
+
+
+<br>
+<br>
+
+<!-- <form action="#" name="form1">
+  <table>
+  <tr>
+  <th>商品名</th>
+  <th>タイプ</th>
+  </tr>
+  <tr>
+  <td>商品サンプル1</td>
+  <td><select name="goods1" onChange="keisan()">
+  <option value="0">タイプを選択してください</option>
+  <option value="500">タイプ1（500円）</option>
+  <option value="1000">タイプ2（1,000円）</option>
+  <option value="1500">タイプ3（1,500円）</option>
+  </select></td>
+  </tr>
+  <tr>
+  <td>商品サンプル2</td>
+  <td><select name="goods2" onChange="keisan()">
+  <option value="0">タイプを選択してください</option>
+  <option value="500">タイプ1（500円）</option>
+  <option value="1000">タイプ2（1,000円）</option>
+  <option value="1500">タイプ3（1,500円）</option>
+  </select></td>
+  </tr>
+  <tr>
+  <td>商品サンプル3</td>
+  <td><select name="goods3" onChange="keisan()">
+  <option value="0">タイプを選択してください</option>
+  <option value="500">タイプ1（500円）</option>
+  <option value="1000">タイプ2（1,000円）</option>
+  <option value="1500">タイプ3（1,500円）</option>
+  </select></td>
+  </tr>
+  <tr>
+  <td align="right"><strong>合計</strong></td>
+  <td><input type="text" name="field_total" size="8" value="0"> 円</td>
+  </tr>
+  </table>
+  
+  </form> -->
+  
+
+<br>
+<script src="index.js"></script>
+
+</body>
+
+</html>
